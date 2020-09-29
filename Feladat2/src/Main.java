@@ -5,6 +5,7 @@ public class Main {
 		System.out.println("Hewllo iosgn");
 		System.out.println("1+2=3");
 		System.out.println("1-2=-1");
+		System.out.println("1*2=2");
 	}
 
 }
