@@ -2,7 +2,7 @@ package com.meiit.webalk.reservation.domain;
 
 import java.util.List;
 
-public class Hotel {
+public class Hotel extends Floor{
 	private String name;
 	private String address;
 	private int stars;
