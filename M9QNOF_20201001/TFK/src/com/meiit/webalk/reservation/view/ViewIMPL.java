@@ -16,10 +16,11 @@ public class ViewIMPL implements View {
 		System.out.println("Whats your name?");
 		BookingPerson person = new BookingPerson();
 		person.setName(sc.next());
-		System.out.println("Your Balance?");
+		System.out.println("Mennyi a zsé");
 		person.setBalance(sc.nextBigDecimal());
 		System.out.println("Currency?");
 		person.setCurrency(Currency.valueOf(sc.next()));
+		System.out.println(person);
 		return person;
 	}
 
@@ -34,19 +35,13 @@ public class ViewIMPL implements View {
 	}
 
 	@Override
-	public void printRooms(List<Hotel> l) {
-
-		System.out.println("Where are you want to book? (choose a number or press q for quit)");
+	public void printRooms(List<Hotel> hotels) {
+		// TODO Auto-generated method stub
 		
-		for (int i = 0; i < l.size(); i++) {
-			System.out.println((i+1) + ": Hotel name: " + l.get(i).getName() + ", Floor: "+ l.get(i).getFloorNumber()+", Wing: " + l.get(i).getType() + ", Room number: " + l.get(i).getNumber() + ", Beds: "+l.get(i).getBeds()+", Room Price: "+ l.get(i).getPrice()+"\n");
-		}
-	
-		}
-		
+	}
 
 	@Override
-	public Room selectRoom(List<Hotel> l) {
+	public Room selectRoom(List<Hotel> hotels) {
 		// TODO Auto-generated method stub
 		return null;
 	}
