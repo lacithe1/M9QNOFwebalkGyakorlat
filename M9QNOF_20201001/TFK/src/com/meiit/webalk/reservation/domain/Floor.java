@@ -2,7 +2,7 @@ package com.meiit.webalk.reservation.domain;
 
 import java.util.List;
 
-public class Floor extends Wing{
+public class Floor {
 	private int floorNumber;
 	private Hotel hotel;
 	private List<Wing>wings;
