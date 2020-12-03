@@ -4,9 +4,19 @@ import java.util.List;
 
 public class Wing {
 	private String description;
+	
 	private Floor floor;
 	private WingType type;
 	private List<Room> rooms;
+	
+	public Wing(String description, Floor floor, WingType type, List<Room> rooms) {
+		super();
+		this.description = description;
+		this.floor = floor;
+		this.type = type;
+		this.rooms = rooms;
+	}
+	
 	public String getDescription() {
 		return description;
 	}

@@ -8,6 +8,16 @@ public class Room {
 	private boolean balcony;
 	private BigDecimal price;
 	private Wing wing;
+	
+	public Room(int number, int beds, boolean balcony, BigDecimal price, Wing wing) {
+		super();
+		this.number = number;
+		this.beds = beds;
+		this.balcony = balcony;
+		this.price = price;
+		this.wing = wing;
+	}
+	
 	public int getNumber() {
 		return number;
 	}

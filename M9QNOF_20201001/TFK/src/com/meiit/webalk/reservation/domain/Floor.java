@@ -6,6 +6,14 @@ public class Floor {
 	private int floorNumber;
 	private Hotel hotel;
 	private List<Wing>wings;
+	
+	public Floor(int floorNumber, Hotel hotel, List<Wing> wings) {
+		super();
+		this.floorNumber = floorNumber;
+		this.hotel = hotel;
+		this.wings = wings;
+	}
+	
 	public int getFloorNumber() {
 		return floorNumber;
 	}

@@ -12,6 +12,21 @@ public class Reservation {
 	private Room room;
 	private BookingPerson person;
 	private Currency currency;
+	
+	
+	
+	public Reservation(BigDecimal amount, LocalDateTime from, boolean active, boolean processed,
+			Room room, BookingPerson person) {
+		super();
+		this.amount = amount;
+		this.from = from;
+		this.to = from.plusDays(1);
+		this.active = active;
+		this.processed = processed;
+		this.room = room;
+		this.person = person;
+		this.currency = person.getCurrency();
+	}
 	public BigDecimal getAmount() {
 		return amount;
 	}

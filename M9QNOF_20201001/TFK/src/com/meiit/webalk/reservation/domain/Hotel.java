@@ -7,6 +7,15 @@ public class Hotel {
 	private String address;
 	private int stars;
 	private List<Floor>floors;
+	
+	public Hotel(String name, String address, int stars, List<Floor> floors) {
+		super();
+		this.name = name;
+		this.address = address;
+		this.stars = stars;
+		this.floors = floors;
+	}
+	
 	public String getName() {
 		return name;
 	}
